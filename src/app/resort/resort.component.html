@@ -1,0 +1,15 @@
+<div class="activity-row resort" (click)="selectResort.emit(resort)">
+  <div class="activity-desc">
+    <h5>Resort Address</h5>
+    <p>{{resort.country}}</p>
+    <p>{{resort.city}}</p>
+    <h6>{{resort.phone}}</h6>
+  </div>
+  <div class="activity-img">
+    <ul>
+      <li><img [src]="resort.imageSrc.slice(0, resort.imageSrc.length-4) + '_small.jpg'"  alt=""/></li>
+      <li><img [src]="resort.avatarSrc.slice(0, resort.avatarSrc.length-4) + '_small.jpg'"  alt=""/></li>
+    </ul>
+  </div>
+  <div class="clear"> </div>
+</div>
